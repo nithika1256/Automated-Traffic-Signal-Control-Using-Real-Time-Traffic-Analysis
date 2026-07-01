@@ -138,30 +138,6 @@ pip install -r requirements.txt
 
 ---
 
-# 🗄️ MongoDB Setup (Optional)
-
-MongoDB is **optional** and is used to store:
-
-* Traffic statistics
-* Signal logs
-* Congestion prediction history
-
-If MongoDB is installed and running locally, verify the database connection using:
-
-```bash
-python database/mongo_setup.py
-```
-
-Default connection:
-
-```text
-mongodb://localhost:27017
-```
-
-> **Note:** If MongoDB is not installed, the AI traffic analysis, vehicle detection, adaptive signal control, and dashboard visualization can still be demonstrated. Only the database logging features will be unavailable.
-
----
-
 # ▶️ Running the Application
 
 Navigate to the backend folder:
