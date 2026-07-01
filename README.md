@@ -313,19 +313,17 @@ Dataset includes:
 
 # 📸 Project Screenshots
 
-### Dashboard Overview
+## 🚦 Dashboard Overview
 
-(Add Dashboard Screenshot)
+![Dashboard Overview](images/app_prev.png)
 
-### Traffic Monitoring
+## 🚗 Traffic Monitoring
 
-(Add Detailed Dashboard Screenshot)
+![Traffic Monitoring](images/detail.png)
 
-### Analytics
+## 📊 Analytics Dashboard
 
-(Add Graph Screenshot)
-
----
+![Analytics Dashboard](images/graph.png)
 
 # 👩‍💻 Author
 
