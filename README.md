@@ -97,47 +97,32 @@ Automated-Traffic-Signal-Control/
 * Chart.js
 
 ---
+## 📋 Prerequisites
 
-# 📋 Prerequisites
-
-Before running the project, ensure the following are installed:
+Before running the project, ensure you have the following installed:
 
 * Python 3.10 or later
-* MongoDB Community Server
-* Git (optional)
+* MongoDB Community Server (Optional – required only for storing traffic logs and analytics)
 
-The project expects MongoDB to be running locally using:
-
-```text
-mongodb://localhost:27017
-```
-
-The sample traffic video is available at:
+**Sample Traffic Video**
 
 ```text
 ai/dataset/sample_traffic.mp4
 ```
 
-YOLOv8 model weights will automatically download during the first execution.
+> **Note:** YOLOv8 model weights will be downloaded automatically during the first execution if they are not already available.
 
 ---
 
-# ⚙ Installation
+# ⚙️ Installation
 
-### 1. Clone the Repository
-
-```bash
-git clone <repository-url>
-cd Automated-Traffic-Signal-Control
-```
-
-### 2. Create a Virtual Environment
+### 1. Create a Virtual Environment
 
 ```bash
 python -m venv .venv
 ```
 
-### 3. Activate the Environment
+### 2. Activate the Virtual Environment
 
 **Windows**
 
@@ -145,7 +130,7 @@ python -m venv .venv
 .\.venv\Scripts\activate
 ```
 
-### 4. Install Dependencies
+### 3. Install Dependencies
 
 ```bash
 pip install -r requirements.txt
@@ -153,23 +138,33 @@ pip install -r requirements.txt
 
 ---
 
-# 🗄 MongoDB Setup
+# 🗄️ MongoDB Setup (Optional)
 
-Start the MongoDB service.
+MongoDB is **optional** and is used to store:
 
-Verify the database connection by running:
+* Traffic statistics
+* Signal logs
+* Congestion prediction history
+
+If MongoDB is installed and running locally, verify the database connection using:
 
 ```bash
 python database/mongo_setup.py
 ```
 
-This command automatically creates the required database and collections if they do not already exist.
+Default connection:
+
+```text
+mongodb://localhost:27017
+```
+
+> **Note:** If MongoDB is not installed, the AI traffic analysis, vehicle detection, adaptive signal control, and dashboard visualization can still be demonstrated. Only the database logging features will be unavailable.
 
 ---
 
-# ▶ Running the Application
+# ▶️ Running the Application
 
-Navigate to the backend directory:
+Navigate to the backend folder:
 
 ```bash
 cd backend
@@ -187,9 +182,8 @@ Open your browser and visit:
 http://127.0.0.1:5000/
 ```
 
-The backend serves the dashboard interface automatically.
+The Flask backend serves the frontend dashboard automatically.
 
----
 
 # 🔗 API Endpoints
 
